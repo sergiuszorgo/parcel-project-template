@@ -1,1 +1,175 @@
+.hero {
+  background-image: url(../images/header/desktop/vector-bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 0%;
+}
 
+.hero-container {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45px 15px 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  color: #111518;
+}
+
+.hero-navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hero-menu {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.hero-menu-cons {
+  display: block;
+  border: 2px solid #ff6b09;
+  width: 336px;
+  text-align: center;
+  line-height: 70px;
+  color: #ff6b09;
+  @media screen and (max-width: 1279px) {
+    margin-right: 101px;
+  }
+}
+
+.hero-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero-menu {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero-button-menu {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  display: inline-flex;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 1280px) {
+  .hero-button-menu {
+    display: none;
+  }
+}
+.hero-menu-list {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.hero-menu-link {
+  color: #b9b9b9;
+}
+// Секция BACKGROUNG ГЕРОЯ
+.hero-bg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-title {
+  width: 50%;
+  padding-top: 138px;
+  h1 {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 130%;
+  }
+}
+
+.hero-img {
+  padding-top: 38px;
+}
+
+.hero-descript {
+  font-size: 20px;
+  line-height: 164.9%;
+  margin-bottom: 40px;
+}
+
+.descript {
+  font-weight: 500;
+  color: #b9b9b9;
+}
+
+.descript-orange {
+  color: #ff6b09;
+}
+
+.hero-bg-link {
+  display: block;
+  text-align: center;
+  width: 354px;
+  border: 0;
+  background: #ff6b09;
+  font-size: 14px;
+  line-height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+}
+.hero-program {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.hero-program-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 164.9%;
+}
+// Секция МЕТОДИКИ
+.hero-program-item {
+  display: flex;
+  position: relative;
+}
+
+.hero-program-item::before {
+  content: '';
+  width: 122px;
+}
+.item-1::before {
+  display: block;
+  background-image: url(../images/svg/female-student-bord.svg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.item-2::before {
+  display: block;
+  background-image: url(../images/svg/mobile-learning-bord.svg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.item-3::before {
+  display: block;
+  background-image: url(../images/svg/umbrella-bord.svg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
