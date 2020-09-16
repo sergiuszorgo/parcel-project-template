@@ -155,7 +155,7 @@
 }
 .hero-program {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   padding: 0px;
 }
 
@@ -167,32 +167,14 @@
 // Секция МЕТОДИКИ
 .hero-program-item {
   display: flex;
+  align-items: center;
   position: relative;
+  &:not(:last-child) {
+    margin-right: 348px;
+  }
 }
-
-.item-1::before {
-  content: '';
-  width: 122px;
-  display: block;
-  background-image: url(../images/svg/female-student-bord.svg);
-  background-size: 100px;
-  background-repeat: no-repeat;
-}
-
-.item-2::before {
-  content: '';
-  width: 122px;
-  display: block;
-  background-image: url(../images/svg/mobile-learning-bord.svg);
-  background-size: 100px;
-  background-repeat: no-repeat;
-}
-
-.item-3::before {
-  content: '';
-  width: 122px;
-  display: block;
-  background-image: url(../images/svg/umbrella-bord.svg);
-  background-size: 100px;
-  background-repeat: no-repeat;
+.hero-program-title {
+  position: absolute;
+  width: 366px;
+  transform: translateX(82px);
 }
