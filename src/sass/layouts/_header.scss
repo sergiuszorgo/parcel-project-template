@@ -15,6 +15,9 @@
   font-weight: 700;
   line-height: 28px;
   color: #111518;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 768px;
+  }
 }
 
 .hero-navi {
@@ -41,8 +44,14 @@
   color: #ff6b09;
   background-color: #fff;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 101px;
+    width: 260px;
+    font-size: 12px;
+    line-height: 48px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
   &:hover,
   &:focus {
@@ -106,22 +115,35 @@
 
 .hero-title {
   width: 50%;
-  padding-top: 138px;
-  h1 {
+  padding-top: 125px;
+  .slogan {
     font-weight: 800;
     font-size: 58px;
     line-height: 130%;
+    margin: 0 0 24px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 26px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 53px;
   }
 }
 
 .hero-img {
+  width: 100%;
+  height: auto;
   padding-top: 38px;
 }
 
 .hero-descript {
   font-size: 20px;
   line-height: 164.9%;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .descript {
@@ -152,29 +174,42 @@
     color: #ff6b09;
     border: 2px solid #ff6b09;
   }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 260px;
+    font-size: 12px;
+    line-height: 48px;
+  }
 }
+
+// Секция МЕТОДИКИ
 .hero-program {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   padding: 0px;
 }
 
-.hero-program-title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 164.9%;
-}
-// Секция МЕТОДИКИ
 .hero-program-item {
   display: flex;
   align-items: center;
   position: relative;
-  &:not(:last-child) {
-    margin-right: 348px;
+}
+
+.hero-program-img {
+  position: absolute;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 58px;
   }
 }
+
 .hero-program-title {
-  position: absolute;
-  width: 366px;
-  transform: translateX(82px);
+  max-width: 300px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 164.9%;
+  margin-left: 82px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 0 68px;
+  }
 }

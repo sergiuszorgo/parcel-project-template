@@ -31,7 +31,7 @@
     </nav>
     <section class="hero-bg">
       <div class="hero-title">
-        <h1>
+        <h1 class="slogan">
           Комплексная<br />
           <nobr>подготовка к ВНО</nobr><br />
           по английскому<br />
@@ -43,11 +43,36 @@
         </p>
         <a href="" class="hero-bg-link">Хочу на бесплатное занятие</a>
       </div>
-      <img
-        class="hero-img"
-        src="./images/header/desktop/hero-bg.png"
-        alt="Картинка героя"
-      />
+      <picture class="hero-img">
+        <source
+          srcset="
+            ./images/header/desktop/hero-bg.png    1x,
+            ./images/header/desktop/hero-bg@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header/tablet/hero-bg.png    1x,
+            ./images/header/tablet/hero-bg@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header/mobile/hero-bg.png    1x,
+            ./images/header/mobile/hero-bg@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img
+          src="./images/header/desktop/hero-bg.png"
+          alt="Фото преподавателя"
+        />
+      </picture>
     </section>
     <section>
       <ul class="hero-program">
@@ -67,10 +92,7 @@
             src="./images/svg/mobile-learning-bord.svg"
             alt=""
           />
-          <h3 class="hero-program-title">
-            Современные<br />
-            методики обучения
-          </h3>
+          <h3 class="hero-program-title">Современные методики обучения</h3>
         </li>
         <li class="hero-program-item">
           <img
@@ -78,10 +100,7 @@
             src="./images/svg/umbrella-bord.svg"
             alt=""
           />
-          <h3 class="hero-program-title">
-            Финансовая гарантия<br />
-            результата
-          </h3>
+          <h3 class="hero-program-title">Финансовая гарантия результата</h3>
         </li>
       </ul>
     </section>
