@@ -12,28 +12,28 @@
   background-size: contain;
   background-position: 50% 0%;
 
-  background-image: url(./images/heder/mobile/vector-bg.png);
+  background-image: url(../images/header/mobile/vector-bg.png);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(./images/heder/mobile/vector-bg@2x.png);
+    background-image: url(../images/header/mobile/vector-bg@2x.png);
   }
 
   @media screen and (min-width: 768px) {
     & {
-      background-image: url(./images/heder/tablet/vector-bg.png);
+      background-image: url(../images/header/tablet/vector-bg.png);
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(./images/heder/tablet/vector-bg@2x.png);
+      background-image: url(../images/header/tablet/vector-bg@2x.png);
     }
   }
 
   @media screen and (min-width: 1340px) {
     & {
-      background-image: url(./images/heder/desktop/vector-bg.png);
+      background-image: url(../images/header/desktop/vector-bg.png);
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
