@@ -353,9 +353,9 @@
   }
 }
 .footer-black {
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
+  padding: 20px 0px;
+  // display: flex;
+  // justify-content: center;
   background-color: #000000;
 
   font-family: Montserrat;
@@ -365,8 +365,16 @@
   letter-spacing: 0em;
   text-align: left;
   color: #b9b9b9;
-
+}
+.footer-black-text {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
   @include for-size(tablet-landscape) {
-    justify-content: left;
+    margin-left: 40px;
+  }
+  @include for-size(desktop) {
+    margin-left: 180px;
   }
 }
