@@ -6,4 +6,8 @@
 // Стили для файла с примером HTML-фрагмента
 @import '../sass/base/fonts';
 @import '../sass/base/common';
+@import '../sass/utils/variables';
+@import '../sass/layouts/header';
+@import '../sass/layouts/section-method';
+@import '../sass/layouts/teacher';
 @import '../sass/layouts/section-we-guarantee';
