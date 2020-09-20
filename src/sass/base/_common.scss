@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
 
@@ -24,27 +24,9 @@ ul {
   list-style: none;
 }
 
-.img {
-  border-style: none;
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-.container {
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 320px) {
-    width: 300px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 710px;
-  }
-  @media screen and (min-width: 1340px) {
-    width: 1340px;
-  }
+img {
+    border-style: none;
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
