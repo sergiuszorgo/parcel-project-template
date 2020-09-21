@@ -1,0 +1,255 @@
+.section-reviews {
+  position: relative;
+  padding-bottom: 50px;
+}
+.reviews-title {
+  margin: 0px;
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 26px;
+  letter-spacing: 0, 03em;
+  text-align: center;
+
+  @include for-size(tablet-landscape) {
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: 0, 03em;
+    text-align: center;
+  }
+  @include for-size(desktop) {
+    font-family: Montserrat;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0, 03em;
+    text-align: center;
+  }
+}
+.reviews-container {
+  margin-top: 40px;
+  width: 240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 20px;
+  background: #ffffff;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    width: 710px;
+    padding: 40px 30px;
+  }
+  @include for-size(desktop) {
+    width: 1010px;
+  }
+}
+.photo-vk {
+  @include for-size(tablet-landscape) {
+    margin-right: 40px;
+  }
+}
+.photo-student {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  @include for-size(tablet-landscape) {
+    margin: 0px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+  }
+}
+.vk-svg {
+  width: 30px;
+  height: 18px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.link-vk {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  @include for-size(tablet-landscape) {
+    margin: 0px;
+    margin-left: 100px;
+  }
+}
+.name-student {
+  margin: 0px;
+  margin-bottom: 10px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0, 08em;
+  text-align: center;
+
+  color: #ff6b09;
+
+  @include for-size(tablet-landscape) {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0, 08em;
+    text-align: left;
+  }
+  @include for-size(desktop) {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 37px;
+    letter-spacing: 0, 08em;
+    text-align: left;
+  }
+}
+.information-student {
+  margin: 0px;
+  margin-bottom: 10px;
+
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0, 08em;
+  text-align: center;
+
+  color: #b9b9b9;
+
+  @include for-size(tablet-landscape) {
+    text-align: left;
+  }
+  @include for-size(desktop) {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0, 08em;
+    text-align: left;
+  }
+}
+.reviews-student {
+  margin: 0px;
+
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @include for-size(tablet-landscape) {
+    width: 412px;
+    text-align: left;
+  }
+  @include for-size(desktop) {
+    width: 710px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .link-reviews {
+    color: #ff6b09;
+    text-decoration: underline;
+  }
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 70px;
+  // margin-right: 250px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+
+  button {
+    background-color: transparent;
+    border: transparent;
+    // margin-right: 250px;
+  }
+  @include for-size(tablet-landscape) {
+    // justify-content: space-between;
+    top: 50%;
+  }
+  .right-arrow {
+    height: 30px;
+    @include for-size(tablet-portrait) {
+      margin-left: 110px;
+    }
+    @include for-size(tablet-landscape) {
+      margin-left: 330px;
+    }
+    @include for-size(desktop) {
+      margin-left: 550px;
+    }
+  }
+  .left-arrow {
+    height: 30px;
+    @include for-size(tablet-portrait) {
+      margin-right: 110px;
+    }
+    @include for-size(tablet-landscape) {
+      margin-right: 330px;
+    }
+    @include for-size(desktop) {
+      margin-right: 550px;
+    }
+  }
+}
+.list-student {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+}
+.list-student-tablet {
+  display: none;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.section-list-student {
+  width: 182px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
+  @include for-size(tablet-landscape) {
+    width: 560px;
+  }
+}
